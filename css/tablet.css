@@ -1,0 +1,201 @@
+@media (max-width: 1199px) {
+	/* Header */
+	html {
+		font-size: 56.25%;
+	}
+
+	.header {
+		background-image: url(../image/banner-bg-tablet.jpg);
+		background-position: bottom;
+	}
+
+	.header__logo {
+		margin-top: 15px;
+		margin-left: 18px;
+	}
+
+	.header__logo img {
+    width: 161px;
+	}
+
+	.header__title {
+		width: 640px;
+		line-height: 1.5;
+		padding-top: 95px;
+		padding-bottom: 105px;
+	}
+
+	/*popup*/
+	.arrows {
+	    right: 37px;
+	    top: 140px;
+	    background-size: 23% 52%;
+	}
+
+	/* Бургер */
+
+	.hamburger__menu {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	#menu__toggle {
+		opacity: 0;
+	}
+
+	.menu__btn {
+		display: flex;
+		align-items: center;
+		position: absolute;
+		top: 47px;
+		right: 30px;
+		width: 26px;
+		height: 26px;
+		cursor: pointer;
+		z-index: 0;
+	}
+
+	.menu__btn span, .menu__btn span:before, .menu__btn span:after {
+ 		display: block;
+ 		position: absolute;
+		width: 100%;
+		height: 2px;
+		background-color: #fff;
+	}
+
+	.menu__btn span:before {
+		content: "";
+		top: -8px;
+	}
+
+	.menu__btn span:after {
+		content: "";
+		top: 8px;
+	}
+
+	.menu__box {
+		visibility: hidden;
+		top: 45px;
+		position: absolute;
+	}
+
+	#menu__toggle:checked ~ .menu__btn > span {
+  		transform: rotate(45deg);
+	}
+	#menu__toggle:checked ~ .menu__btn > span::before {
+		top: 0;
+		transform: rotate(0);
+	}
+	#menu__toggle:checked ~ .menu__btn > span::after {
+		top: 0;
+		transform: rotate(90deg);
+	}
+	#menu__toggle:checked ~ .menu__box {
+		visibility: visible;
+		right: 8%;
+	}
+	/* Бургер все */
+	/*Aside Trends*/
+
+	.trends__container {
+		flex-wrap: wrap;
+	}
+	
+	.trends__container__1, .trends__container__2, .trends__container__3, .trends__container__4 {
+		width: calc(50% - 2px);
+		margin-right: 0px;
+		max-height: 245px;
+		min-height: 245px;
+		background-position: bottom;
+	}
+
+	.trends__container__1 {
+		margin-right: 4px;
+		margin-bottom: 4px;
+	}
+	.trends__container__2 {
+		margin-bottom: 4px;
+	}
+	.trends__container__3 {
+		margin-right: 4px;
+	}
+
+	.trends__title {
+		margin-top: 4.7rem;
+		margin-bottom: 2.1rem;
+	}
+
+	.trends {
+		margin-bottom: 55px;
+	}
+
+	/*Main Body*/
+
+	.body {
+		width: 100%;
+		justify-content: space-around;
+		margin: 50px auto 0px auto; 
+	}
+
+	.posts {
+		flex-direction: column;
+		margin-bottom: 25px;
+	}
+
+	.posts__tag {
+		margin: 15px 0px;
+	}
+
+	.posts__container {
+		margin-left: 0;
+	}
+
+	.posts__container h2 {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
+	.content {
+		width: 382px;
+	}
+
+	.text {
+		margin-top: 0;
+		font-size: 17px;
+	}
+
+	.info {
+		margin: 28px 0px;
+	}
+
+	/*Aside Shop*/
+
+	.shop {
+		width: 90%;
+	}
+
+	.shop__title {
+		margin-top: 30px;
+	}
+
+	.shop__container {
+		flex-wrap: wrap;
+	}
+
+	.shop__post {
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+	/*Footer*/
+
+	footer {
+		width: 100%;
+	}
+	
+	.social {
+		width: 90%;
+	}
+
+
+}
