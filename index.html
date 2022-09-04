@@ -1,119 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MQ-Diplom</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/tablet.css">
-	<link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
 	<div class="popup">
-		<div class="popup__container">
-			<label for="popup__x" class="popup__close"></label>
-			<div class="popup__title">ваш фидбек</div>
+		<div class="popup-container">
+			<label class="popup-close"></label>
+			<div class="popup-title">ваш фидбек</div>
 			<form class="feedback">
-				<label class="select__group">
-					<span class="select__group__title">Как часто вы заходите на сайт?</span>
-					<div class="visually__hidden">укажите как часто вы посещаете наш сайт</div>
+				<label class="select-group">
+					<span class="select-group-title">Как часто вы заходите на сайт?</span>
 					<select class="select" id="selected">
-						<div class="visually__hidden">Почти каждый день</div>
 						<option value="everyday" selected>Почти каждый день</option>
-						<div class="visually__hidden">раз в несколько дней</div>
 						<option value="day">Раз в несколько дней</option>
-						<div class="visually__hidden">раз в несколько недель</div>
 						<option value="week">Раз в несколько недель</option>
-						<div class="visually__hidden">несколько раз в год</div>
 						<option value="year">Несколько раз в год</option>
 					</select>
 				</label>
-				<div class="radio__container">
-					<div class="radio__title">Вы подписаны на e-mail рассылку?</div>
+				<div class="radio-container">
+					<div class="radio-title">Вы подписаны на e-mail рассылку?</div>
 					<div class="radio">
-						<div class="visually__hidden">нажмите если подписаны на e-mail рассылку</div>
-						<label class="radio__group" for="choice1">
+						<div class="visually-hidden">нажмите если подписаны на e-mail рассылку</div>
+						<label class="radio-group" for="choice1">
 							<input type="radio" class="checkbox" id="choice1" name="check" checked>
-							<span class="checkbox__text">Да</span>
+							<span class="checkbox-text">Да</span>
 						</label>
-						<label class="radio__group" for="choice2">
-							<div class="visually__hidden">нажмите если не подписанны на e-mail рассылку</div>
+						<label class="radio-group" for="choice2">
 							<input type="radio" class="checkbox" id="choice2" name="check">
-							<span class="checkbox__text">Нет</span>
+							<span class="checkbox-text">Нет</span>
 						</label>
 	     			</div>
 	     		</div>
-     			<div class="form__group">
-				    <label class="field__group">
-				        <div class="field__label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</div>
-				        <div class="visually__hidden">напишите какой контент вы хотели бы видеть на нашем сайте?</div>
-				        <textarea class="field__textarea" placeholder="Может, больше рецептов?" required></textarea>
+     			<div class="form-group">
+     				<div class="field-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</div>
+				    <label class="field-group">
+				        <textarea class="field-textarea" placeholder="Может, больше рецептов?" required></textarea>
 				    </label>
 				</div>
-				<button class="popup__button">отправить</button>
+				<button class="popup-button">отправить</button>
 			</form>	
 		</div>
 	</div>
 	<header class="header">
-		<div class="header__container">
-			<div class="header__content">
-				<div class="header__logo">
+		<div class="header-container">
+			<div class="header-content">
+				<div class="header-logo">
 					<a href="#0"><img src="svg/noemi-logo.svg" alt="logotype"></a>
 				</div>
-				<nav class="hamburger__menu">
-	  				<input id="menu__toggle" type="checkbox" />
-	  				<label class="menu__btn" for="menu__toggle">
+				<nav class="hamburger-menu">
+	  				<input id="menu-toggle" type="checkbox" />
+	  				<label class="menu-btn" for="menu-toggle">
 	   					<span></span>
 	  				</label>
-					<ul class="menu__box">
-						<li class="header__nav__link"><a href="#0">главная</a></li>
-						<li class="header__nav__link"><a href="#0">посты</a></li>
-						<li class="header__nav__link"><a href="#0">статьи</a></li>
-						<li class="header__nav__link"><a href="#0">теги</a></li>
-						<li class="header__nav__link"><a href="#0">темы</a></li>
-						<li class="header__nav__link"><a href="#0">контакты</a></li>
+					<ul class="menu-box">
+						<li class="header-nav-link"><a href="#0">главная</a></li>
+						<li class="header-nav-link"><a href="#0">посты</a></li>
+						<li class="header-nav-link"><a href="#0">статьи</a></li>
+						<li class="header-nav-link"><a href="#0">теги</a></li>
+						<li class="header-nav-link"><a href="#0">темы</a></li>
+						<li class="header-nav-link"><a href="#0">контакты</a></li>
 					</ul>
 				</nav>
 			</div>
-			<div class="header__title">
+			<div class="header-title">
 				<h1>блог о творчестве, спорте, и образе жизни</h1>
 			</div>
 		</div>
 	</header>
 	<aside class="trends">
-		<div class="trends__title">
+		<div class="trends-title">
 			<h2>сейчас в тренде</h2>
 		</div>
-		<section class="trends__container">
-			<article class="trends__container__1">
-				<div class="trends__content">
-					<ul class="trends__tag">
+		<section class="trends-container">
+			<article class="trends-container-1">
+				<div class="trends-content">
+					<ul class="trends-tag">
 						<li><a href="#0">lifestyle</a></li>
 						<li><a href="#0">interior</a></li>
 					</ul>
 					<h2><a href="#0">сейчас в тренде: сад на подоконнике</a></h2>
 				</div>
 			</article>
-			<article class="trends__container__2">
-				<div class="trends__content">
-					<ul class="trends__tag">
+			<article class="trends-container-2">
+				<div class="trends-content">
+					<ul class="trends-tag">
 						<li><a href="#0">food</a></li>
 					</ul>
 					<h2><a href="#0">сыры на красивых картинках из интернета: какие они на вкус?</a></h2>
 				</div>
 			</article>
-			<article class="trends__container__3">
-				<div class="trends__content">
-					<ul class="trends__tag">
+			<article class="trends-container-3">
+				<div class="trends-content">
+					<ul class="trends-tag">
 						<li><a href="#0">lifestyle</a></li>
 						<li><a href="#0">travel</a></li>
 					</ul>
 					<h2><a href="#0">собираемся в первый поход в горы</a></h2>
 				</div>
 			</article>
-			<article class="trends__container__4">
-				<div class="trends__content">
-					<ul class="trends__tag">
+			<article class="trends-container-4">
+				<div class="trends-content">
+					<ul class="trends-tag">
 						<li><a href="#0">food</a></li>
 						<li><a href="#0">health</a></li>
 					</ul>
@@ -127,8 +118,8 @@
 			<section class="posts">
 				<article class="posts">
 					<img src="image/last-post1.jpg" alt="Человек на пляже">
-					<div class="posts__container">
-						<ul class="posts__tag">
+					<div class="posts-container">
+						<ul class="posts-tag">
 							<li>
 								<a href="#0">travel</a> 
 							</li>
@@ -138,7 +129,7 @@
 						</ul>
 						<h2><a href="#0">10 мест, ради которых стоит проснуться на рассвете</a></h2>
 						<div class="info"> 
-							<time>10 июня 2019 </time>
+							<div class="time">10 июня 2019 </div>
 							<div class="author">Неизвестный автор </div>
 						</div>
 							<span class="text">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города... Музеи еще закрыты. Что посмотреть?</span>
@@ -146,8 +137,8 @@
 				</article>
 				<article class="posts">
 					<img src="image/last-post2.jpg" alt="Девушка занимаеться йогой на пляже">
-					<div class="posts__container">
-						<ul class="posts__tag">
+					<div class="posts-container">
+						<ul class="posts-tag">
 							<li>
 								<a href="#0">health</a>
 							</li>
@@ -157,7 +148,7 @@
 						</ul>
 						<h2><a href="#0">йога для начинающих в домашних условиях</a></h2>
 						<div class="info"> 
-							<time>10 июня 2019</time>
+							<div class="time">10 июня 2019</div>
 							<div class="author">Неизвестный автор</div>
 						</div>
 						<span class="text">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу</span>
@@ -165,24 +156,25 @@
 				</article>
 				<article class="posts">
 					<img src="image/last-post3.jpg" alt="Девушка в толпе на фестевале">
-					<div class="posts__container">
-						<ul class="posts__tag">
+					<div class="posts-container">
+						<ul class="posts-tag">
 							<li>
 								<a href="#0">music</a>
 							</li>
 						</ul>
 						<h2><a href="#0">лучшие музыкальные фестивали этого лета</a></h2>
 						<div class="info"> 
-							<time>10 июня 2019</time>
+							<div class="time">10 июня 2019</div>
 							<div class="author">Неизвестный автор</div>
 						</div>
-						<span class="text"><p>Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьете свою палатку</p><p>Мы составили список лучших летних фестивалей по всему миру</p></span>
+						<span class="text">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьете свою палатку</span>
+						<span class="text">Мы составили список лучших летних фестивалей по всему миру</span>
 					</div>
 				</article>
 				<article class="posts">
 					<img src="image/last-post4.jpg" alt="Блюдо на столе">
-					<div class="posts__container">
-						<ul class="posts__tag">
+					<div class="posts-container">
+						<ul class="posts-tag">
 							<li>
 								<a href="#0">lifestyle</a>
 							</li>
@@ -192,7 +184,7 @@
 						</ul>
 						<h2><a href="#0">наукоёмкий подход к кулинарии</a></h2>
 						<div class="info"> 
-							<time>10 июня 2019</time>
+							<div class="time">10 июня 2019</div>
 							<div class="author">Неизвестный автор</div>
 						</div>
 						<span class="text">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</span>
@@ -200,8 +192,8 @@
 				</article>
 				<article class="posts">
 					<img src="image/last-post5.jpg" alt="подушка с принтом">
-					<div class="posts__container">
-						<ul class="posts__tag">
+					<div class="posts-container">
+						<ul class="posts-tag">
 							<li>
 								<a href="#0">lifestyle</a> 
 							</li>
@@ -214,7 +206,7 @@
 						</ul>
 						<h2><a href="#0">делаем модные принты на подушках для интерьера</a></h2>
 						<div class="info"> 
-							<time>10 июня 2019</time>
+							<div class="time">10 июня 2019</div>
 							<div class="author">Неизвестный автор</div>
 						</div>
 						<span class="text">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</span>
@@ -223,79 +215,80 @@
 			</section>
 		</div>
 		<div class="sidebar">
-			<section class="last__news">
-				<div class="last__news__title">
+			<section class="last-news">
+				<div class="last-news-title">
 					<h3>новые посты</h3>
 				</div>
-				<div class="last__news">
-					<article class="last__news__subtitle">
+				<div class="last-news">
+					<article class="last-news-subtitle">
 						<img src="image/2.jpg" alt="человек на пляже">
-						<div class="last__news__container">
-							<time>14 июня 2019</time>
+						<div class="last-news-container">
+							<div class="time">14 июня 2019</div>
 							<h3><a href="#0">10 мест, ради которых стоит проснуться</a></h3>
 						</div>			
 					</article>
 				</div>
-				<div class="last__news">
-					<article class="last__news__subtitle">
+				<div class="last-news">
+					<article class="last-news-subtitle">
 						<img src="image/151.jpg" alt="Девушка занимаеться йогой на пляже">
-						<div class="last__news__container">
-							<time>14 июня 2019</time>
+						<div class="last-news-container">
+							<div class="time">14 июня 2019</div>
 							<h3><a href="#0">йога для домашних</a></h3>
 						</div>
 					</article>
 				</div>
-				<div class="last__news">
-					<article class="last__news__subtitle">
+				<div class="last-news">
+					<article class="last-news-subtitle">
 						<img src="image/45.jpg" alt="красивый дизан">
-						<div class="last__news__container">
-							<time>14 июня 2019</time>
+						<div class="last-news-container">
+							<div class="time">14 июня 2019</div>
 							<h3><a href="#0">как мы превратили классное место в балкон</a></h3>
 						</div>
 					</article>
 				</div>
-				<div class="last__news">
-					<article class="last__news__subtitle">
+				<div class="last-news">
+					<article class="last-news-subtitle">
 						<img src="image/501.jpg" alt="блюдо на столе">
-						<div class="last__news__container">
-							<time>14 июня 2019</time>
+						<div class="last-news-container">
+							<div class="time">14 июня 2019</div>
 							<h3><a href="">кулинарный подход к науке</a></h3>
 						</div>
 					</article>
 				</div>
-				<div class="last__news">
-					<article class="last__news__subtitle">
+				<div class="last-news">
+					<article class="last-news-subtitle">
 						<img src="image/7.jpg" alt="девушки с прическами">
-						<div class="last__news__container">
-							<time>14 июня 2019</time>
+						<div class="last-news-container">
+							<div class="time">14 июня 2019</div>
 							<h3><a href="#0">лучшие прически для распущенных волос</a></h3>
 						</div>
 					</article>
 				</div>
 			</section>
 			<form class="search">
-				<label class="search__group">
-					<div class="visually__hidden">графа поиска</div>
+				<div class="visually-hidden">графа поиска</div>
+				<label class="search-group">
 					<input class="field" placeholder="Найти..." required>
 				</label>
-				<button class="button"><div class="visually__hidden">поиск</div></button>
+				<div class="visually-hidden">поиск</div>
+				<button class="button"></button>
 			</form>	
 			<form class="subscription">
-				<label class="subscription__group">
-					<div class="subscription__header">
+				<div class="subscription-header">
 						<h3>рассылка</h3>
-					</div>
-					<div class="visually__hidden">введите ваш эмайл</div>
+				</div>
+				<div class="visually-hidden">введите ваш эмайл</div>
+				<label class="subscription-group">
 					<input class="field" placeholder="Ваш email-адрес" type="email" required>
 				</label>
-				<div class="visually__hidden">нажмите чтобы подписаться</div>
-				<button class="subscription__button">подписаться</button>
+				<div class="visually-hidden">нажмите чтобы подписаться</div>
+				<button class="subscription-button">подписаться</button>
 			</form>	
 			<div class="tags">
-				<div class="tags__header">
+				<div class="tags-header">
 					<h3>теги</h3>
 				</div>
-				<ul class="tags__list">
+				<ul class="tags-list">
 					<li><a href="#0">fashion</a></li>
 					<li><a href="#0">music</a></li>
 					<li><a href="#0">lifestyle</a></li>
@@ -307,10 +300,10 @@
 				</ul>	
 			</div>
 			<div class="categorys">
-				<div class="categorys__header">
+				<div class="categorys-header">
 					<h3>темы</h3>
 				</div>
-				<ul class="categorys__list">
+				<ul class="categorys-list">
 					<li><a href="#0">Красота<span>12</span></a></li>
 					<li><a href="#0">Здоровье<span>4</span></a></li>
 					<li><a href="#0">Образ жизни<span>145</span></a></li>
@@ -322,89 +315,89 @@
 		</div>
 	</main>
 	<aside class="shop">
-		<div class="shop__title">
+		<div class="shop-title">
 			<h2>наши изделия</h2>
 		</div>
-		<section class="shop__container">
-			<article class="shop__post">
+		<section class="shop-container">
+			<article class="shop-post">
 				<picture>
 					<source srcset="image/shop-item-mobile1.jpg" media="(max-width: 767px)">
 					<source srcset="image/shop-item-tablet1.jpg" media="(max-width: 1199px)">
 					<source srcset="image/shop-item-desk1.jpg" media="(min-width: 1200px)">
-					<img src="image/shop-item-desk1.jpg" alt="кукла" class="shop__item">
+					<img src="image/shop-item-desk1.jpg" alt="кукла" class="shop-item">
 				</picture>
 				<div class="item">
-					<div class="item__title">
+					<div class="item-title">
 						подушки на диван
 					</div>
-					<div class="item__text">
+					<div class="item-text">
 						Набор из двух подушек с модными принтами. Видео о создании <a href="#0">здесь</a>.
 					</div>
-					<div class="item__menu">
-						<div class="item__price">
-							<div class="item__price__old">
+					<div class="item-menu">
+						<div class="item-price">
+							<div class="item-price-old">
 								<s>1000 P</s> 
 							</div>
-							<div class="item__price__new">
+							<div class="item-price-new">
 								800 P
 							</div>
 						</div>
-						<div class="visually__hidden">нажмите чтобы перейти в мазин</div>
-						<button class="item__button">
+						<div class="visually-hidden">нажмите чтобы перейти в мазин</div>
+						<button class="item-button">
 							в магазин
 						</button>
 					</div>
 				</div>
 			</article>
-			<article class="shop__post">
+			<article class="shop-post">
 				<picture>
 					<source srcset="image/shop-item-mobile2.jpg" media="(max-width: 767px)">
 					<source srcset="image/shop-item-tablet2.jpg" media="(max-width: 1199px)">
 					<source srcset="image/shop-item-desk2.jpg" media="(min-width: 1200px)">
-					<img src="image/shop-item-desk2.jpg" alt="кукла" class="shop__item">
+					<img src="image/shop-item-desk2.jpg" alt="кукла" class="shop-item">
 				</picture>
 				<div class="item">
-					<div class="item__title">кукла <q>зайчик</q></div>
-					<div class="item__text">
+					<div class="item-title">кукла <q>зайчик</q></div>
+					<div class="item-text">
 						Интерьерная рукодельная кукла <q>Зайчик</q>, созданию которой посвещена <a href="#0">весенняя серия постов</a> в блоге и несколько подкастов.
 					</div>
-					<div class="item__menu">
-						<div class="item__price">
-							<div class="item__price__old"></div>
-							<div class="item__price__new">
+					<div class="item-menu">
+						<div class="item-price">
+							<div class="item-price-old"></div>
+							<div class="item-price-new">
 								3500 P
 							</div>
 						</div>
-						<div class="visually__hidden">нажмите чтобы перейти в мазин</div>
-						<button class="item__button">
+						<div class="visually-hidden">нажмите чтобы перейти в мазин</div>
+						<button class="item-button">
 							в магазин
 						</button>
 					</div>
 				</div>
 			</article>
-			<article class="shop__post">
+			<article class="shop-post">
 				<picture>
 					<source srcset="image/shop-item-mobile3.jpg" media="(max-width: 767px)">
 					<source srcset="image/shop-item-tablet3.jpg" media="(max-width: 1199px)">
 					<source srcset="image/shop-item-desk3.jpg" media="(min-width: 1200px)">
-					<img src="image/shop-item-desk3.jpg" alt="кукла" class="shop__item">
+					<img src="image/shop-item-desk3.jpg" alt="кукла" class="shop-item">
 				</picture>
 				<div class="item">
-					<div class="item__title">шестиугольная рамка</div>
-					<div class="item__text">
+					<div class="item-title">шестиугольная рамка</div>
+					<div class="item-text">
 						Необычная рамка для украшения дома из видео <a href="#0"><q>Как сделать рамку из подручных средств за 30 минут</q></a>
 					</div>
-					<div class="item__menu">
-						<div class="item__price">
-							<div class="item__price__old">
+					<div class="item-menu">
+						<div class="item-price">
+							<div class="item-price-old">
 								<s>500 P</s> 
 							</div>
-							<div class="item__price__new">
+							<div class="item-price-new">
 								400 P
 							</div>
 						</div>
-						<div class="visually__hidden">нажмите чтобы перейти в мазин</div>
-						<button class="item__button">
+						<div class="visually-hidden">нажмите чтобы перейти в мазин</div>
+						<button class="item-button">
 							в магазин
 						</button>
 					</div>
@@ -414,17 +407,17 @@
 	</aside>
 	<footer>
 		<div class="social">
-			<ul class="social__container">
+			<ul class="social-container">
 				<li>
-					<div class="visually__hidden">перейти на дрибl</div>
+					<div class="visually-hidden">перейти на дрибl</div>
 					<a href="#0"><img src="svg/001-dribbble.svg" alt="дрибл"></a>
 				</li>
 				<li>
-					<div class="visually__hidden">перейти на пинтерест</div>
+					<div class="visually-hidden">перейти на пинтерест</div>
 					<a href="#0"><img src="svg/002-pinterest.svg" alt="пинтерест"></a>
 				</li>
 				<li>
-					<div class="visually__hidden">перейти на тамблер</div>
+					<div class="visually-hidden">перейти на тамблер</div>
 					<a href="#0"><img src="svg/003-tumblr.svg" alt="тамблер"></a>
 				</li>
 			</ul>
